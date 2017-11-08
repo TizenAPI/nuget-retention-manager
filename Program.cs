@@ -40,6 +40,7 @@ namespace RetentionManager
 
             foreach (var pkg in searchResult)
             {
+
                 var versions = await pkg.GetVersionsAsync();
                 foreach (VersionInfo version in versions)
                 {
@@ -92,7 +93,7 @@ namespace RetentionManager
             foreach (var pkg in _packagesToRemove)
             {
                 Console.WriteLine($"Delete.. {pkg.Id} {pkg.Version.ToNormalizedString()}");
-                await packageUpdateResource.Delete(pkg.Id, pkg.Version.ToNormalizedString(), endpoint => apiKey, desc => true, _logger);
+                await packageUpdateResource.Delete(pkg.Id, $"{pkg.Version.ToNormalizedString()}?hardDelete=true", endpoint => apiKey, desc => true, _logger);
             }
         }
 
