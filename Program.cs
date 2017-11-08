@@ -92,7 +92,7 @@ namespace RetentionManager
             foreach (var pkg in _packagesToRemove)
             {
                 Console.WriteLine($"Delete.. {pkg.Id} {pkg.Version.ToNormalizedString()}");
-                await packageUpdateResource.Delete(pkg.Id, pkg.Version.ToNormalizedString(), endpoint => apiKey, desc => false, _logger);
+                await packageUpdateResource.Delete(pkg.Id, pkg.Version.ToNormalizedString(), endpoint => apiKey, desc => true, _logger);
             }
         }
 
