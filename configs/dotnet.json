@@ -1,0 +1,29 @@
+﻿{
+  "Source": "https://tizen.myget.org/F/dotnet/api/v3/index.json",
+  "Rules": [
+    {
+      "Id": "Tizen.NET",
+      "Version": "[4.0.0-*, 4.99.99)",
+      "Stable": 50,
+      "Prerelease": 100
+    },
+    {
+      "Id": "Tizen.NET",
+      "Version": "5.0.0-*",
+      "Stable": 50,
+      "Prerelease": 100
+    },
+    {
+      "Id": "Tizen.NET.Internals",
+      "Version": "[4, 5)",
+      "Stable": 50,
+      "Prerelease": 100
+    },
+    {
+      "Id": "Tizen.NET.Internals",
+      "Version": "5.*",
+      "Stable": 50,
+      "Prerelease": 100
+    }
+  ]
+}
