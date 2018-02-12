@@ -4,25 +4,25 @@
     {
       "Id": "Tizen.NET",
       "Version": "[4.0.0-*, 4.99.99)",
-      "Stable": 50,
+      "Stable": 100,
       "Prerelease": 100
     },
     {
       "Id": "Tizen.NET",
       "Version": "5.0.0-*",
-      "Stable": 50,
+      "Stable": 100,
       "Prerelease": 100
     },
     {
       "Id": "Tizen.NET.Internals",
       "Version": "[4, 5)",
-      "Stable": 50,
+      "Stable": 100,
       "Prerelease": 100
     },
     {
       "Id": "Tizen.NET.Internals",
       "Version": "5.*",
-      "Stable": 50,
+      "Stable": 100,
       "Prerelease": 100
     }
   ]
