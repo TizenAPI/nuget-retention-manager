@@ -1,29 +1,41 @@
-﻿{
+{
   "Source": "https://tizen.myget.org/F/dotnet/api/v3/index.json",
   "Rules": [
     {
       "Id": "Tizen.NET",
       "Version": "[4.0.0-*, 4.99.99)",
-      "Stable": 100,
-      "Prerelease": 100
+      "Stable": 200,
+      "Prerelease": 0
     },
     {
       "Id": "Tizen.NET",
       "Version": "5.0.0-*",
-      "Stable": 100,
-      "Prerelease": 100
+      "Stable": 200,
+      "Prerelease": 0
+    },
+    {
+      "Id": "Tizen.NET.API4",
+      "Version": "4.0.0-*",
+      "Stable": 200,
+      "Prerelease": 0
+    },
+    {
+      "Id": "Tizen.NET.API5",
+      "Version": "5.0.0-*",
+      "Stable": 200,
+      "Prerelease": 0
     },
     {
       "Id": "Tizen.NET.Internals",
       "Version": "[4, 5)",
-      "Stable": 100,
-      "Prerelease": 100
+      "Stable": 200,
+      "Prerelease": 0
     },
     {
       "Id": "Tizen.NET.Internals",
       "Version": "5.*",
-      "Stable": 100,
-      "Prerelease": 100
+      "Stable": 200,
+      "Prerelease": 0
     }
   ]
 }
