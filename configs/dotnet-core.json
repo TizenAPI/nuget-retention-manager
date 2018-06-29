@@ -1,0 +1,15 @@
+{
+  "Source": "https://tizen.myget.org/F/dotnet-core/api/v3/index.json",
+  "Rules": [
+    {
+      "Id": "Microsoft.DotNet.PlatformAbstractions",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)"
+      ],
+      "Stable": 10,
+      "Prerelease": 30
+    },
+  ]
+}
