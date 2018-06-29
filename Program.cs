@@ -44,7 +44,7 @@ namespace RetentionManager
                 var versions = await pkg.GetVersionsAsync();
                 foreach (VersionInfo version in versions)
                 {
-                    _allPackages.Add(new PackageIdentity(pkg.Title, version.Version));
+                    _allPackages.Add(new PackageIdentity(pkg.Identity.Id, version.Version));
                 }
             }
         }
