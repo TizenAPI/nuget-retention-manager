@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
@@ -52,38 +52,46 @@ namespace RetentionManager
         public void CalculatePackagesToRemove(RetentionRule rule)
         {
             // Console.WriteLine($"Rule : Id={rule.Id}, Version={rule.Version}, Stable={rule.Stable}, Prerelease={rule.Prerelease}");
-            VersionRange range = VersionRange.Parse(rule.Version);
-
-            IEnumerable<PackageIdentity> stablePackages =
-                from pkg in _allPackages
-                where pkg.Id == rule.Id && pkg.Version.IsPrerelease == false && range.Satisfies(pkg.Version)
-                orderby pkg.Version descending
-                select pkg;
-
-            IEnumerable<PackageIdentity> prereleasePackages =
-                from pkg in _allPackages
-                where pkg.Id == rule.Id && pkg.Version.IsPrerelease == true && range.Satisfies(pkg.Version)
-                orderby pkg.Version descending
-                select pkg;
-
-            int cnt;
-
-            cnt = 0;
-            foreach (var pkg in stablePackages)
-            {
-                cnt++;
-                // Console.WriteLine($"S {cnt}    {pkg.Id} {pkg.Version.ToNormalizedString()}");
-                if (cnt > rule.Stable)
-                    _packagesToRemove.Add(pkg);
+            List<string> versions = new List<string>();
+            if (rule.Version != null) {
+                versions.Add(rule.Version);
+            }
+            if (rule.Versions != null) {
+                versions.AddRange(rule.Versions);
             }
 
-            cnt = 0;
-            foreach (var pkg in prereleasePackages)
-            {
-                cnt++;
-                // Console.WriteLine($"P {cnt}    {pkg.Id} {pkg.Version.ToNormalizedString()}");
-                if (cnt > rule.Prerelease)
-                    _packagesToRemove.Add(pkg);
+            foreach (var version in versions) {
+                VersionRange range = VersionRange.Parse(version);
+
+                IEnumerable<PackageIdentity> stablePackages =
+                    from pkg in _allPackages
+                    where pkg.Id == rule.Id && pkg.Version.IsPrerelease == false && range.Satisfies(pkg.Version)
+                    orderby pkg.Version descending
+                    select pkg;
+
+                IEnumerable<PackageIdentity> prereleasePackages =
+                    from pkg in _allPackages
+                    where pkg.Id == rule.Id && pkg.Version.IsPrerelease == true && range.Satisfies(pkg.Version)
+                    orderby pkg.Version descending
+                    select pkg;
+
+                int cnt;
+
+                cnt = 0;
+                foreach (var pkg in stablePackages)
+                {
+                    cnt++;
+                    if (cnt > rule.Stable)
+                        _packagesToRemove.Add(pkg);
+                }
+
+                cnt = 0;
+                foreach (var pkg in prereleasePackages)
+                {
+                    cnt++;
+                    if (cnt > rule.Prerelease)
+                        _packagesToRemove.Add(pkg);
+                }
             }
         }
 
@@ -93,7 +101,9 @@ namespace RetentionManager
             foreach (var pkg in _packagesToRemove)
             {
                 Console.WriteLine($"Delete.. {pkg.Id} {pkg.Version.ToNormalizedString()}");
+#if !TESTONLY
                 await packageUpdateResource.Delete(pkg.Id, $"{pkg.Version.ToNormalizedString()}?hardDelete=true", endpoint => apiKey, desc => true, _logger);
+#endif
             }
         }
 
