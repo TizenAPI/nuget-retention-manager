@@ -5,11 +5,717 @@
       "Id": "Microsoft.DotNet.PlatformAbstractions",
       "Versions": [
         "[2.0.0-*, 2.1.0-0)",
-        "[2.1.0-*, 2.2.0-0)",
-        "[2.2.0-*, 3.0.0-0)"
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
       ],
-      "Stable": 10,
-      "Prerelease": 30
+      "Stable": 20,
+      "Prerelease": 50
     },
+    {
+      "Id": "Microsoft.Extensions.DependencyModel",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.Net.UWPCoreRuntimeSdk",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.App",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.DotNetAppHost",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.DotNetHost",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.DotNetHostPolicy",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.DotNetHostResolver",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.ILAsm",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.ILDAsm",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.Jit",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.Native",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.Platforms",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.Runtime.CoreCLR",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.Targets",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.NETCore.TestHost",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "Microsoft.Private.CoreFx.NETCoreApp",
+      "Versions": [
+        "[4.4.0-*, 4.4.1-0)",
+        "[4.4.1-*, 4.4.2-0)",
+        "[4.4.2-*, 4.4.3-0)",
+        "[4.4.3-*, 4.4.4-0)",
+        "[4.4.4-*, 4.5.0-0)",
+        "[4.5.0-*, 4.6.0-0)",
+        "[4.6.0-*, 4.7.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.linux-armel.Microsoft.Private.CoreFx.NETCoreApp",
+      "Versions": [
+        "[4.4.0-*, 4.4.1-0)",
+        "[4.4.1-*, 4.4.2-0)",
+        "[4.4.2-*, 4.4.3-0)",
+        "[4.4.3-*, 4.4.4-0)",
+        "[4.4.4-*, 4.5.0-0)",
+        "[4.5.0-*, 4.6.0-0)",
+        "[4.6.0-*, 4.7.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.4.0.0-armel.Microsoft.NETCore.App",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.4.0.0-armel.Microsoft.NETCore.DotNetAppHost",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.4.0.0-armel.Microsoft.NETCore.DotNetHost",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.4.0.0-armel.Microsoft.NETCore.DotNetHostPolicy",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.4.0.0-armel.Microsoft.NETCore.DotNetHostResolver",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.4.0.0-armel.Microsoft.NETCore.ILAsm",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.4.0.0-armel.Microsoft.NETCore.ILDAsm",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.4.0.0-armel.Microsoft.NETCore.Jit",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.4.0.0-armel.Microsoft.NETCore.Native",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.4.0.0-armel.Microsoft.NETCore.Runtime.CoreCLR",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.4.0.0-armel.Microsoft.NETCore.TestHost",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.4.0.0-armel.Microsoft.Private.CoreFx.NETCoreApp",
+      "Versions": [
+        "[4.4.0-*, 4.4.1-0)",
+        "[4.4.1-*, 4.4.2-0)",
+        "[4.4.2-*, 4.4.3-0)",
+        "[4.4.3-*, 4.4.4-0)",
+        "[4.4.4-*, 4.5.0-0)",
+        "[4.5.0-*, 4.6.0-0)",
+        "[4.6.0-*, 4.7.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.5.0.0-armel.Microsoft.NETCore.App",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.5.0.0-armel.Microsoft.NETCore.DotNetAppHost",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.5.0.0-armel.Microsoft.NETCore.DotNetHost",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.5.0.0-armel.Microsoft.NETCore.DotNetHostPolicy",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.5.0.0-armel.Microsoft.NETCore.DotNetHostResolver",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.5.0.0-armel.Microsoft.NETCore.ILAsm",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.5.0.0-armel.Microsoft.NETCore.ILDAsm",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.5.0.0-armel.Microsoft.NETCore.Jit",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.5.0.0-armel.Microsoft.NETCore.Native",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.5.0.0-armel.Microsoft.NETCore.Runtime.CoreCLR",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.5.0.0-armel.Microsoft.NETCore.TestHost",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "runtime.tizen.5.0.0-armel.Microsoft.Private.CoreFx.NETCoreApp",
+      "Versions": [
+        "[4.4.0-*, 4.4.1-0)",
+        "[4.4.1-*, 4.4.2-0)",
+        "[4.4.2-*, 4.4.3-0)",
+        "[4.4.3-*, 4.4.4-0)",
+        "[4.4.4-*, 4.5.0-0)",
+        "[4.5.0-*, 4.6.0-0)",
+        "[4.6.0-*, 4.7.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.Microsoft.NETCore.ILAsm",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.Microsoft.NETCore.ILDAsm",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.Microsoft.NETCore.Jit",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.Microsoft.NETCore.Native",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.Microsoft.NETCore.Runtime.CoreCLR",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.Microsoft.NETCore.TestHost",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.runtime.tizen.4.0.0-armel.Microsoft.NETCore.ILAsm",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.runtime.tizen.4.0.0-armel.Microsoft.NETCore.ILDAsm",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.runtime.tizen.4.0.0-armel.Microsoft.NETCore.Jit",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.runtime.tizen.4.0.0-armel.Microsoft.NETCore.Native",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.runtime.tizen.4.0.0-armel.Microsoft.NETCore.Runtime.CoreCLR",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.runtime.tizen.4.0.0-armel.Microsoft.NETCore.TestHost",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.runtime.tizen.5.0.0-armel.Microsoft.NETCore.ILAsm",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.runtime.tizen.5.0.0-armel.Microsoft.NETCore.ILDAsm",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.runtime.tizen.5.0.0-armel.Microsoft.NETCore.Jit",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.runtime.tizen.5.0.0-armel.Microsoft.NETCore.Native",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    },
+    {
+      "Id": "transport.runtime.tizen.5.0.0-armel.Microsoft.NETCore.Runtime.CoreCLR",
+      "Versions": [
+        "[2.0.0-*, 2.1.0-0)",
+        "[2.1.0-*, 2.1.1-0)",
+        "[2.1.1-*, 2.2.0-0)",
+        "[2.2.0-*, 3.0.0-0)",
+        "[3.0.0-*, 3.1.0-0)"
+      ],
+      "Stable": 20,
+      "Prerelease": 50
+    }
   ]
 }
